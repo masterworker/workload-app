@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # 사전 학습된 모델 불러오기
-model_path = "random_forest_workload_model.pkl"
+model_path = "optimized_rf_model.joblib"
 loaded_model = joblib.load(model_path)
 
 # Streamlit App Title
@@ -49,7 +49,7 @@ st.divider()
 # 하단 설명 또는 추가 정보
 st.markdown("""
     🔍 **사용자 안내:**  
-    - 예측 모델은 랜덤포레스트 모델로 평균 제곱근 오차(RMSE)는 0.13입니다.
-    - RMSE가 0.13이라는 것은, 모델이 예측한 값이 평균적으로 실제 값에서 0.13 단위 정도 벗어난다는 것을 의미합니다.
+    - 예측 모델은 랜덤포레스트 모델로 평균 제곱근 오차(RMSE)는 0.137입니다.
+    - RMSE가 0.137이라는 것은, 모델이 예측한 값이 평균적으로 실제 값에서 0.137 단위 정도 벗어난다는 것을 의미합니다.
     - 약 30만개의 데이터를 학습하였습니다.
     """)
